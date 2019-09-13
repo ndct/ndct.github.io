@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Nhà đất Cần Thơ</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/img/favicon.png" width="" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Nhà đất Cần Thơ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Tin tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upload.html">Đăng bài</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container pt-3">
+    <div class="row">
+      <div class="col-md-12 pb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              style="max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto; margin-left: 15px!important;"
+              class="img-fluid" src="/assets/img/logo.png" alt="Nha Dat Can Tho">
+          </div>
+          <div class="col-md-6">
+            <img style="border-radius: 10px!important;" class="img-fluid"
+              src="https://www.sapo.vn/blog/wp-content/uploads/2014/10/banner-quang-cao-du-khach-hang-hieu-qua-3.jpg"
+              alt="Quang Cao">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 pb-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Nhà đất Cần Thơ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Trang chủ</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-8 pb-3">
+            <div class="row" id="listEstate">
+
+            </div>
+          </div>
+          <div class="col-md-4 pb-3">
+            <div style="padding-left: 0px!important; padding-right: 0px!important;" class="col-md-12 pb-3">
+              <img style="border-radius: 10px!important;" class="img-fluid"
+                src="https://www.sapo.vn/blog/wp-content/uploads/2014/10/banner-quang-cao-du-khach-hang-hieu-qua-3.jpg"
+                alt="Quang Cao">
+            </div>
+            <div class="card mb-3">
+              <div class="card-header">
+                Tìm kiếm
+              </div>
+              <div class="card-body">
+                <input class="form-control mb-3" type="text" placeholder="Bạn muốn tìm kiếm gì">
+                <div class="form-group">
+                  <label for="cityFormControlSelect1">Tỉnh/ thành phố</label>
+                  <select class="form-control" id="cityFormControlSelect1">
+                    <option value="cantho">Cần Thơ</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cityFormControlSelect1">Quận/ huyện</label>
+                  <select class="form-control" id="cityFormControlSelect1">
+                    <option value="cantho">Ninh Kiều</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary btn-block">Tìm kiếm ngay</button>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header">
+                Đăng nhập
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="loginInputEmail1">Tên tài khoản</label>
+                  <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Nhập ở đây">
+                  <small id="emailHelp" class="form-text text-muted">Chúng tôi sẽ không chia sẻ cho bất kì ai về thông
+                    tin của bạn.</small>
+                </div>
+                <div class="form-group">
+                  <label for="loginInputPassword1">Mật khẩu</label>
+                  <input type="password" class="form-control" id="loginInputPassword1" placeholder="Nhập ở đây">
+                </div>
+                <button type="button" onclick="loginButton();" class="btn btn-primary mb-2">Đăng nhập</button>
+                <button type="button" onclick="registerButton();" class="btn btn-secondary mb-2">Đăng kí</button>
+                <button type="button" onclick="facebookLogin();" class="btn btn-info btn-block">Đăng nhập bằng
+                  Facebook</button>
+                <button type="button" onclick="googleLogin();" class="btn btn-danger btn-block">Đăng nhập bằng
+                  Google</button>
+              </div>
+            </div>
+            <div style="padding-left: 0px!important; padding-right: 0px!important;" class="col-md-12 pb-3">
+              <img style="border-radius: 10px!important;" class="img-fluid"
+                src="https://www.sapo.vn/blog/wp-content/uploads/2014/10/banner-quang-cao-du-khach-hang-hieu-qua-3.jpg"
+                alt="Quang Cao">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center">
+      <p>Bản quyền tất cả thuộc về &copy; 2019 Nhà đất Cần Thơ. <br /> Địa chỉ: 189/6 Trần Vĩnh Kiết, Phường An Bình,
+        Quận Ninh Kiều, Thành phố Cần Thơ. </p>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCzs6G5wdDMBye--G9PH9h23_-g8clkYZ4",
+      authDomain: "nhadatcantho-fc708.firebaseapp.com",
+      databaseURL: "https://nhadatcantho-fc708.firebaseio.com",
+      projectId: "nhadatcantho-fc708",
+      storageBucket: "nhadatcantho-fc708.appspot.com",
+      messagingSenderId: "126921632738",
+      appId: "1:126921632738:web:59f04ac48adb11f87127bb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    db.collection("POST").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        if (doc.data().checked != '0') {
+          $('#listEstate').prepend(`
+          <div class="col-md-6 mb-3">
+                <div class="card" style="width: 100%;">
+                  <img src="${doc.data().thumb}" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">${doc.data().titlePost}</h5>
+                    <p class="card-text color-gray" style="line-height: 2.0!important;">
+                      ${doc.data().infoPost}
+                    </p>
+                    <p class="card-text color-gray" style="line-height: 2.0!important;">
+                      Giá: ${numberWithCommas(doc.data().pricePost)} VNĐ
+                    </p>
+                    <p class="card-text color-gray"><i class="material-icons">map</i> ${doc.data().addressPost}</p>
+                    <a href="views.html?id=${doc.id}" class="btn btn-danger">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+          `);
+        }
+      });
+    });
+  </script>
+  <script src="assets/js/nhadat.js"></script>
+</body>
+
+</html>

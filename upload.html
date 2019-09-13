@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Nhà đất Cần Thơ</title>
+
+  <style>
+    .ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),
+    .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners {
+      border: 1px solid var(--ck-color-toolbar-border);
+      margin-top: 10px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/img/favicon.png" width="" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Nhà đất Cần Thơ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Tin tức</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="upload.html">Đăng bài</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container pt-3">
+    <div class="row">
+      <div class="col-md-12 pb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              style="max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto; margin-left: 15px!important;"
+              class="img-fluid" src="/assets/img/logo.png" alt="Nha Dat Can Tho">
+          </div>
+          <div class="col-md-6">
+            <img style="border-radius: 10px!important;" class="img-fluid"
+              src="https://www.sapo.vn/blog/wp-content/uploads/2014/10/banner-quang-cao-du-khach-hang-hieu-qua-3.jpg"
+              alt="Quang Cao">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 pb-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Nhà đất Cần Thơ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Đăng bài</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="form-group">
+              <label for="thumbLink">Ảnh bài đăng</label>
+              <input type="text" class="form-control" name="thumbLink" id="thumbLink" aria-describedby="helpId"
+                placeholder="">
+              <small id="helpId" class="form-text text-muted">Vui lòng điền link vào đây, bao gồm cả https.</small>
+            </div>
+            <div class="form-group">
+              <label for="inputTitle">Tiêu đề bài đăng</label>
+              <input type="text" class="form-control" name="inputTitle" id="inputTitle" aria-describedby="helpId"
+                placeholder="">
+              <small id="helpId" class="form-text text-muted">Vui lòng nhập Tiếng Việt có dấu.</small>
+            </div>
+            <div class="form-group">
+              <label for="inputShortInfo">Giới thiệu ngắn</label>
+              <input type="text" class="form-control" name="inputShortInfo" id="inputShortInfo"
+                aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Vui lòng nhập Tiếng Việt có dấu.</small>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Địa chỉ bất động sản</label>
+              <input type="text" class="form-control" name="inputAddress" id="inputAddress">
+            </div>
+            <div class="form-group">
+              <label for="inputPrice">Giá tiền</label>
+              <input type="number" class="form-control" name="inputPrice" id="inputPrice">
+              <small id="helpId" class="form-text text-muted">Chỉ nhập chữ số.</small>
+            </div>
+            <div class="form-group">
+              <label for="inputAuthorName">Tên người bán</label>
+              <input type="text" class="form-control" name="inputAuthorName" id="inputAuthorName">
+            </div>
+            <div class="form-group">
+              <label for="inputAuthorPhone">Số điện thoại người bán</label>
+              <input type="text" class="form-control" name="inputAuthorPhone" id="inputAuthorPhone">
+            </div>
+            <div class="form-group">
+              <label for="inputAuthorAddress">Địa chỉ người bán</label>
+              <input type="text" class="form-control" name="inputAuthorAddress" id="inputAuthorAddress">
+            </div>
+            <div>
+              <label for="inputContent">Nội dung bài đăng</label> <br />
+              <label style="color: red; cursor: pointer;" class="toHrefUploadPhoto" for="inputHref">Bấm vào đây để đăng
+                hình ảnh</label>
+              <!-- The toolbar will be rendered in this container. -->
+              <div id="toolbar-container"></div>
+              <!-- This container will become the editable. -->
+              <div id="editor">
+                <p>Viết nội dung ở đây.</p>
+              </div>
+            </div>
+            <button id="submitPosts" type="button" class="btn btn-block btn-danger mb-3">Đăng bài ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center">
+      <p>Bản quyền tất cả thuộc về &copy; 2019 Nhà đất Cần Thơ. <br /> Địa chỉ: 189/6 Trần Vĩnh Kiết, Phường An Bình,
+        Quận Ninh Kiều, Thành phố Cần Thơ. </p>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCzs6G5wdDMBye--G9PH9h23_-g8clkYZ4",
+      authDomain: "nhadatcantho-fc708.firebaseapp.com",
+      databaseURL: "https://nhadatcantho-fc708.firebaseio.com",
+      projectId: "nhadatcantho-fc708",
+      storageBucket: "nhadatcantho-fc708.appspot.com",
+      messagingSenderId: "126921632738",
+      appId: "1:126921632738:web:59f04ac48adb11f87127bb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+  </script>
+  <script src="assets/lib/ckeditor.js"></script>
+  <script src="assets/js/nhadat.js"></script>
+  <script>
+    let editor;
+    DecoupledEditor
+      .create(document.querySelector('#editor'), {
+
+      })
+      .then(newEditor => {
+        editor = newEditor;
+        const toolbarContainer = document.querySelector('#toolbar-container');
+
+        toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    document.querySelector('#submitPosts').addEventListener('click', () => {
+      const editorData = editor.getData();
+      const titlePost = $('#inputTitle').val();
+      const shortInfo = $('#inputShortInfo').val();
+      const price = $('#inputPrice').val();
+      const address = $('#inputAddress').val();
+      const authorName = $('#inputAuthorName').val();
+      const authorPhone = $('#inputAuthorPhone').val();
+      const authorAddress = $('#inputAuthorAddress').val();
+      const thumbLink = $('#thumbLink').val();
+      if (thumbLink != null && titlePost != null && shortInfo != null && price != null && address != null &&
+        authorName != null && authorPhone != null && editorData != null) {
+        db.collection("POST").add({
+            titlePost: titlePost,
+            infoPost: shortInfo,
+            contentPost: editorData,
+            pricePost: price,
+            addressPost: address,
+            authorName: authorName,
+            authorPhone: authorPhone,
+            authorAddress: authorAddress,
+            checked: 0,
+            thumb: thumbLink
+          })
+          .then(function (docRef) {
+            console.log("Document written with ID: ", docRef.id);
+            alert("Đăng bài thành công !");
+            window.location.href = "./index.html";
+          })
+          .catch(function (error) {
+            console.error("Error adding document: ", error);
+          });
+      }
+    });
+    document.querySelector('.toHrefUploadPhoto').addEventListener('click', () => {
+      window.open(
+        '/images.html',
+        '_blank'
+      );
+    });
+  </script>
+</body>
+
+</html>
